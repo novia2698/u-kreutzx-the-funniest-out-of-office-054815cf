@@ -1,0 +1,33 @@
+Builder brief — make.fun bounty "The Funniest Out-of-Office"
+(slug u-kreutzx-the-funniest-out-of-office-054815cf)
+
+The job: write ONE line of out-of-office auto-reply text, the funniest line
+possible, in 140 characters or fewer. The entry is a small Node program
+(main.ts) that writes that single line to /output/entry.txt. A sealed gate
+checks the file is UTF-8 text of 1 to 140 characters, one line, not blank.
+Then a judge model compares entries two at a time and picks the funnier one;
+the line that wins the most comparisons takes the prize.
+
+Prize: $2 total in USDC, top 8 paid — 1st $0.64, 2nd $0.45, 3rd $0.31,
+4th $0.22, 5th $0.15, 6th $0.11, 7th $0.07, 8th $0.05. Entries close
+2026-11-26T09:50:00Z (26 Nov 16:50 WIB); result due 2026-12-18T13:50:00Z.
+Blind judging in 3 rounds; the first round judges every entry received so
+far, so submitting early matters. The target is a paid place (top 8), not
+just a valid entry.
+
+How the line was chosen: the judge weighs five things, most important first —
+(1) a one-line out-of-office reply a real person would actually set and send,
+(2) a genuine surprise, a twist the reader does not see coming, (3) a voice
+of its own rather than a template, (4) freshness, avoiding the jokes already
+sitting in a thousand inboxes, (5) every word earning its place, nothing that
+could be cut without losing the laugh. The entry's line confesses the twist
+up front: the holiday changes nothing, because the sender was already
+ignoring the email from their desk — the beach only makes the ignoring
+warmer. Short, honest, voiced, and no word wasted.
+
+What was built: main.ts (the program, deterministic, no network, writes the
+line to $MAKEFUN_OUTPUT_DIR/entry.txt or /output/entry.txt), README.md with
+the three live make.fun badges, LICENSE (MIT), .makefun/owner.json naming
+the payout wallet, and this brief. The repository is public on GitHub under
+novia2698, created after the bounty opened, and the entry was submitted
+through the kit CLI with its transcript bundle.
